@@ -1,23 +1,7 @@
-<!DOCTYPE html>  
-<html lang="pl-PL">  
-<HEAD> 
-<meta charset="utf-8">   
-<TITLE>Proste obliczenia </TITLE> 
-</HEAD> 
-<BODY> 
-    <div style="color:red;font-size:100px;">
-<SCRIPT> 
-<script language="JavaScript">
-    var liczba1=promt("A=","")
-    var A_now=parseFloat(liczba1)
-    var liczba2=promt("B=","")
-    var B_now=parseFloat(liczba2)
-document.write
-(<"A="+A_now+" " + "B="+B_now+" <br>");
-document.write
-(<"A="+Anow+" " + "B="+B_now+" <br>");
-
- </SCRIPT> 
- </div>
-</BODY> 
-</HTML>
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><title>Nowicki Zadanie 16</title><style>body{font-family:Arial}</style></head><body><div style="color:navy;font-size:28px"><script>
+var A_now=parseFloat(prompt("Podaj pierwszą liczbę A=","1")),B_now=parseFloat(prompt("Podaj drugą liczbę B=","2"));
+var a3_now=A_now**3,b3_now=B_now**3,s1_now=3*A_now*A_now*B_now,s2_now=3*A_now*B_now*B_now;
+var suma_now=a3_now+s1_now+s2_now+b3_now;
+document.write("wczytane liczby: A="+A_now+" B="+B_now+"<br>");
+document.write("("+A_now+" + "+B_now+")^3 = "+A_now+"^3 + 3*("+A_now+"^2)*("+B_now+") + 3*("+A_now+")*("+B_now+"^2) + "+B_now+"^3 = "+a3_now+" + "+s1_now+" + "+s2_now+" + "+b3_now+" = "+suma_now);
+</script></div></body></html>
