@@ -1,18 +1,22 @@
-<!doctype html>
-<html lang="pl">
-<head>
-<meta charset="utf-8">
-<title>Nowicki Zadanie 11</title>
-<style>body{font-family:Arial}</style>
-</head>
-<body>
-<div style="color:green;font-size:48px">
-<script>
-var D1_now=parseFloat(prompt("Podaj późniejszy dzień stycznia D1=","30"));
-    var D2_now=parseFloat(prompt("Podaj wcześniejszy dzień stycznia D2=","28"));
-    var sekund_now=(D1_now-D2_now)*24*60*60;
-    document.write("Ilość sekund między dniami "+D1_now+" i "+D2_now+" = "+sekund_now+" sekund");
-</script>
-</div>
-</body>
+<html>
+  <body>
+    <div style="color:green;font-size:48px;">
+      <script language="JavaScript">
+        var D1_now = prompt("Data1=", "30");
+        var D2_now = prompt("Data2=", "28");
+        var sekund;
+        var a = parseFloat(D1_now);
+        var b = parseFloat(D2_now);
+        sekund = (a - b) * 24 * 60 * 60;
+        document.write(
+          "Ilość sekund między dniami " + a + " i " + b + " = " + sekund + " sekund<br>"
+        );
+
+        function okno_zamknij_nowicki() {
+          window.close();
+        }
+      </script>
+    </div>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_nowicki()" />
+  </body>
 </html>
