@@ -1,4 +1,18 @@
-<!doctype html><html lang="pl"><head><meta charset="utf-8"><title>Nowicki Zadanie 15 KOD</title><style>body{font-family:Arial}</style></head><body><h2>Kod źródłowy – zadanie 15</h2><textarea cols="100" rows="35" readonly>&lt;!doctype html&gt;&lt;html lang="pl"&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;title&gt;Nowicki Zadanie 15&lt;/title&gt;&lt;style&gt;body{font-family:Arial}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;Rozkład na dwa takie same ułamki egipskie&lt;/h2&gt;&lt;script&gt;
-var m_now=parseInt(prompt("Podaj m (liczba naturalna &gt; 0)=","3"),10);
-if(m_now&gt;0)document.write("1/"+m_now+" = 1/"+(2*m_now)+" + 1/"+(2*m_now));else document.write("m musi być większe od 0.");
-&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</textarea></body></html>
+<textarea rows="15" cols="80" readonly>
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Nowicki Zadanie 14</title>
+<style>body{font-family:Arial}</style>
+</head>
+<body>
+<h2>Rozkład na trzy ułamki egipskie</h2>
+<script>
+var m_now=parseInt(prompt("Podaj m (liczba naturalna > 0)=","4"),10);
+    if(m_now>0)document.write("1/"+m_now+" = 1/"+(m_now+2)+" + 1/"+((m_now+1)*(m_now+2))+" + 1/"+(m_now*(m_now+1)));
+    else document.write("m musi być większe od 0.");
+</script>
+</body>
+</html>
+  </textarea>
