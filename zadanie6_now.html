@@ -1,16 +1,62 @@
-<!doctype html>
-<html lang="pl">
+
+<html>
 <head>
-<meta charset="utf-8">
-<title>Nowicki Zadanie 6</title>
-<style>body{font-family:Arial}</style>
+    <meta charset="UTF-8">
+    <title>zadanie 6</title>
 </head>
 <body>
-<h2>Zadanie 6 – wczytywanie danych</h2>
-<script>
-var a_now=parseFloat(prompt("Podaj liczbę A=","2"));
-    var b_now=parseFloat(prompt("Podaj liczbę B=","3"));
-    document.write("A="+a_now+", B="+b_now+"<br>Suma="+(a_now+b_now)+"<br>Iloczyn="+(a_now*b_now));
-</script>
+
+<h3>1) Rodzaje okienek:</h3>
+
+<ul>
+    <li>Okienko <b>alert</b> – wyświetlająca okienko dialogowe z informacją i przyciskiem OK</li>
+    <li>Okienko <b>prompt</b> – generująca okno, w którym użytkownik może wpisać wartość, zwracaną następnie do programu</li>
+    <li>Okienko <b>confirm</b> służy do tego, aby użytkownik coś potwierdził (stąd nazwa confirm)</li>
+</ul>
+
+<br>
+
+<h3>2) Konwersji liczb:</h3>
+
+Wczytanie zmiennej z użyciem <b>prompt</b> wykonywane jest jako ciąg znaków dlatego konieczna jest konwersja z ciągu znaków na wartości liczbowe aby wykonywać obliczenia.
+
+<ul>
+    <li><b>parseFloat(zmienna)</b> - konwersja zmiennej do typu float</li>
+    <li><b>parseInt(zmienna)</b> - konwersja zmiennej do typu int (liczbowego)</li>
+    <li><b>toString(zmienna)</b> - konwersja zmiennej do typu łańcuchowego</li>
+</ul>
+
+<h3>3) Przy nadawaniu nazw zmiennym należy przestrzegać pewnych zasad:</h3>
+
+<ol>
+    <li>
+        Nazwa zmiennej musi się zaczynać od litery, znaku "$" lub "_", może zawierać tylko litery (bez polskich znaków), cyfry oraz "$" i "_".<br>
+        <u>Poprawne nazwy zmiennych:</u> zmienna1, $wynik, _rozmiar, wynik1, Rekord, $_gracz<br>
+        <u>Błędne nazwy zmiennych:</u> 1zmienna, wynik gry, wysokość&rozmiar, wynik.rekord, &gracz, wysokość, imię+nazwisko.
+    </li>
+    <li>
+        Wielkość liter ma znaczenie.<br>
+        Rekord i rekord to dwie różne zmienne! Jest to bardzo częsta przyczyna błędów w kodzie początkujących programistów.
+    </li>
+    <li>
+        Należy nie używać słów kluczowych JavaScript jako nazw zmiennych.
+    </li>
+</ol>
+
+<h3>4) Omów typy zmiennych w Javascript:</h3>
+
+Number - Typ liczbowy
+
+<ul>
+    <li>zmienne całkowite</li>
+    <li>zmienne zmiennoprzecinkowe</li>
+</ul>
+
+String - Typ tekstowy<br>
+Boolean - Typ logiczny<br>
+Null - Pusta zawartość<br>
+Undefined - Typ niezidentyfikowany<br>
+Object - Obiekt
+
 </body>
 </html>
