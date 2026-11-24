@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Nowicki Z21</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 24px; }
+h1 { color: navy; }
+input { margin: 5px; padding: 4px; }
+.wynik { color: navy; font-size: 24px; margin-top: 15px; }
+</style>
+</head>
+<body>
+<h1>Zadanie 21 – walec</h1>
+<p>Mariusz Nowicki, klasa 3F, numer w dzienniku 18</p>
+<script>
+function V(r,h)
+{
+ r_liczba=parseFloat(r);
+ h_liczba=parseFloat(h);
+ V_wynik=Math.PI*r_liczba*r_liczba*h_liczba;
+ document.getElementsByName('obj')[0].value=V_wynik.toFixed(2);
+ alert("V="+V_wynik.toFixed(2)+" cm^3");
+ pokaz1.innerHTML="V="+V_wynik.toFixed(2)+" cm^3"+"<br>";
+}
+function Pc(r,h)
+{
+ r_liczba=parseFloat(r);
+ h_liczba=parseFloat(h);
+ Pc_wynik=2*Math.PI*r_liczba*r_liczba+2*Math.PI*r_liczba*h_liczba;
+ document.getElementsByName('pole')[0].value=Pc_wynik.toFixed(2);
+ alert("Pc="+Pc_wynik.toFixed(2)+" cm^2");
+ pokaz2.innerHTML="Pc="+Pc_wynik.toFixed(2)+" cm^2";
+}
+</script>
+Obliczanie V i Pc walca<br><br>
+<form name="formularz" action="#" onsubmit="V(this.promien.value,this.wysokosc.value); Pc(this.promien.value,this.wysokosc.value); return false;">
+Podaj r=<input size="6" name="promien" value="3">
+Podaj h=<input size="6" name="wysokosc" value="5"><br><br>
+<input type="submit" value="oblicz"><br><br>
+V=<input size="8" name="obj">
+Pc=<input size="8" name="pole">
+</form>
+<table><tr id="pokaz1"></tr><tr id="pokaz2"></tr></table>
+</body>
+</html>

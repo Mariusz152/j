@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Nowicki Z20</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 24px; }
+h1 { color: navy; }
+input { margin: 5px; padding: 4px; }
+.wynik { color: navy; font-size: 24px; margin-top: 15px; }
+</style>
+</head>
+<body>
+<h1>Zadanie 20 – trójkąt</h1>
+<p>Mariusz Nowicki, klasa 3F, numer w dzienniku 18</p>
+<script>
+var xa_now=parseFloat(prompt("Podaj xa punktu A",""));
+var ya_now=parseFloat(prompt("Podaj ya punktu A",""));
+var xb_now=parseFloat(prompt("Podaj xb punktu B",""));
+var yb_now=parseFloat(prompt("Podaj yb punktu B",""));
+var xc_now=parseFloat(prompt("Podaj xc punktu C",""));
+var yc_now=parseFloat(prompt("Podaj yc punktu C",""));
+
+function AB_now(xa_now,ya_now,xb_now,yb_now) {
+ return Math.sqrt(Math.pow(xb_now-xa_now,2)+Math.pow(yb_now-ya_now,2));
+}
+function BC_now(xb_now,yb_now,xc_now,yc_now) {
+ return Math.sqrt(Math.pow(xc_now-xb_now,2)+Math.pow(yc_now-yb_now,2));
+}
+function AC_now(xa_now,ya_now,xc_now,yc_now) {
+ return Math.sqrt(Math.pow(xc_now-xa_now,2)+Math.pow(yc_now-ya_now,2));
+}
+document.write("Punkt A= ("+xa_now+", "+ya_now+")<br>");
+document.write("Punkt B= ("+xb_now+", "+yb_now+")<br>");
+document.write("Punkt C= ("+xc_now+", "+yc_now+")<br><br>");
+document.write("Długość AB = "+AB_now(xa_now,ya_now,xb_now,yb_now).toFixed(2)+"<br>");
+document.write("Długość BC = "+BC_now(xb_now,yb_now,xc_now,yc_now).toFixed(2)+"<br>");
+document.write("Długość AC = "+AC_now(xa_now,ya_now,xc_now,yc_now).toFixed(2)+"<br>");
+</script>
+</body>
+</html>

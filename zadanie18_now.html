@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Nowicki Z18</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 24px; }
+h1 { color: navy; }
+input { margin: 5px; padding: 4px; }
+.wynik { color: navy; font-size: 24px; margin-top: 15px; }
+</style>
+</head>
+<body>
+<h1>Zadanie 18 – funkcje</h1>
+<p>Mariusz Nowicki, klasa 3F, numer w dzienniku 18</p>
+<div style="color:navy;font-size:30px;">
+<script>
+var a=parseFloat(prompt("a=",""));
+var b=parseFloat(prompt("b=",""));
+
+function suma_now(a,b) { return a+b; }
+function odejmowanie_now(a,b) { return a-b; }
+function mnozenie_now(a,b) { return a*b; }
+function od_kwadratu_now(a,b) {
+    document.write(a+"^2 = "+Math.pow(a,2)+"<br>");
+    document.write(b+"^2 = "+Math.pow(b,2)+"<br>");
+}
+function reszta_z_dzielenia_a_przez_b_now(a,b) { return a%b; }
+
+document.write("suma = "+suma_now(a,b)+"<br>");
+document.write("odejmowanie = "+odejmowanie_now(a,b)+"<br>");
+document.write("mnożenie = "+mnozenie_now(a,b)+"<br>");
+od_kwadratu_now(a,b);
+if (b!=0) {
+ document.write("reszta z dzielenia = "+reszta_z_dzielenia_a_przez_b_now(a,b)+"<br>");
+} else {
+ document.write("Nie można dzielić przez zero.<br>");
+}
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Nowicki Z22</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 24px; }
+h1 { color: navy; }
+input { margin: 5px; padding: 4px; }
+.wynik { color: navy; font-size: 24px; margin-top: 15px; }
+</style>
+</head>
+<body>
+<h1>Zadanie 22 – prostokąt</h1>
+<p>Mariusz Nowicki, klasa 3F, numer w dzienniku 18</p>
+<script>
+function Pole_now(a_now,b_now)
+{
+ var pole_wynik=a_now*b_now;
+ document.getElementsByName("pole")[0].value=pole_wynik.toFixed(2);
+ wyprowadz_pole_now.innerHTML="Pole prostokąta = "+pole_wynik.toFixed(2);
+}
+function obwod_now(a_now,b_now)
+{
+ var obwod_wynik=2*a_now+2*b_now;
+ document.getElementsByName("obw")[0].value=obwod_wynik.toFixed(2);
+ wyprowadz_obwod_now.innerHTML="Obwód prostokąta = "+obwod_wynik.toFixed(2);
+}
+function oblicz_now()
+{
+ var a_dana_now=parseFloat(document.getElementsByName("a_dana_now")[0].value);
+ var b_dana_now=parseFloat(document.getElementsByName("b_dana_now")[0].value);
+ Pole_now(a_dana_now,b_dana_now);
+ obwod_now(a_dana_now,b_dana_now);
+}
+</script>
+<form onsubmit="oblicz_now(); return false;">
+Podaj bok a: <input name="a_dana_now" value="4"><br>
+Podaj bok b: <input name="b_dana_now" value="6"><br>
+<input type="submit" value="Oblicz">
+</form>
+<br>Pole: <input name="pole">
+Obwód: <input name="obw">
+<p id="wyprowadz_pole_now"></p>
+<p id="wyprowadz_obwod_now"></p>
+</body>
+</html>
